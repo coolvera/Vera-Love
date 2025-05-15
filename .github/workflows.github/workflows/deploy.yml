@@ -1,4 +1,4 @@
-name: Deploy to Heroku
+cretsname: Deploy to Heroku
 
 on:
   push:
@@ -29,8 +29,8 @@ jobs:
       - name: Deploy to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku_api_key: ${{ HRKU-AAUHsQr-rQoXg3Ku8B-BlPcLbw5Wn1TLiPR9FNMoASLg_____wz7kFV3nkUv }}
-          heroku_app_name: ${{ vera-fombon-app }}
-          heroku_email: ${{ vmfombon@yahoo.com }}
-          healthcheck: "https://${{ vera-fombon-app }}.herokuapp.com/health"# This is a basic workflow to help you get started with Actions
+          heroku_api_key: ${{ secrets.HRKU-AAUHsQr-rQoXg3Ku8B-BlPcLbw5Wn1TLiPR9FNMoASLg_____wz7kFV3nkUv }}
+          heroku_app_name: ${{ secrets.vera-fombon-app }}
+          heroku_email: ${{ secrets.vmfombon@yahoo.com }}
+          healthcheck: "https://${{ secrets.vera-fombon-app }}.herokuapp.com/health"# This is a basic workflow to help you get started with Actions
 

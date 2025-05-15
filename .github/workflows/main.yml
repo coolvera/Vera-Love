@@ -32,4 +32,4 @@ jobs:
           heroku_api_key: ${{ HRKU-AAUHsQr-rQoXg3Ku8B-BlPcLbw5Wn1TLiPR9FNMoASLg_____wz7kFV3nkUv }}
           heroku_app_name: ${{ vera-fombon-app}}
           heroku_email: ${{ vmfombon@yahoo.com }}
-          healthcheck: "https://${{ secrets.HEROKU_APP_NAME }}.herokuapp.com/health"
+          healthcheck: "https://${{ vera-fombon-app }}.herokuapp.com/health"
